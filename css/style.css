@@ -168,7 +168,12 @@ header{
 
 .bx-wrapper{
   margin-top: 1px;
- border: none;
- box-shadow:none;
 }
 
+
+
+
+.page-footer{
+  margin-top:-65px; 
+  background-color:#212121;
+}
