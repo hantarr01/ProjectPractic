@@ -300,3 +300,9 @@ header{
 }
 
 }
+
+.info{
+  color: #71827c;
+  float:right;
+  margin-top: 15px;
+}

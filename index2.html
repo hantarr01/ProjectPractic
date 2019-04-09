@@ -169,27 +169,29 @@
 		
 		<div class="formBlock">
 			
-			<form action="">
+			<form action="index.php" method="POST" name="requestname"  enctype="multipart/form-data">
 				<ul>
 
 				<li class="widthInp">
 					<p class="textInput"><b>Ваше имя:</b></p>
-					<input type="text" name="" class="inputPl">
+					<input type="text" name="Name" class="inputPl">
 				</li>
 				
 				<li class="widthInp">
 					<p class="textInput"><b>Ваш email:</b></p>
-					<input type="text" name="" class="inputPl">
+					<input type="text" name="Email" class="inputPl">
 				</li>
 
 				<li class="widthInp">
 					<p class="textInput"><b>Ваш пароль:</b></p>
-					<input type="text" name="" class="inputPl">
+					<input type="password" name="Password" class="inputPl">
 				</li>
 
 				<li><p class="widthInp2">
-					<input type="button" name="" value="Отправить" class="inpButton">
+					<input type="button" onclick="request()" value="Отправить" class="inpButton">
 				</li></p>
+
+				<div id="result_output" style="color: #71827c;float:right; margin-top: 15px;"></div>
 
 				</ul>
 			</form>
@@ -263,6 +265,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 
 <script type="text/javascript" src="script.js"></script>
-
+<script src="request.js"></script>
 </body>
 </html>
