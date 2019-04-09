@@ -6,6 +6,7 @@ body{
 }
 
 header{
+  font-family: 'Roboto Slab', serif;
   display: table; 
   width: 100%;
   background-color:#212121;
@@ -20,7 +21,9 @@ header{
 }
 
 .brand-logo{
-    margin-left:5px;
+    margin-left:20px; 
+    text-align: center;
+    width:400px; 
     font-family: 'Alegreya SC', serif;
 }
 
