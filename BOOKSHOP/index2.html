@@ -169,7 +169,7 @@
 		
 		<div class="formBlock">
 			
-			<form action="index.php" method="POST" name="requestname"  enctype="multipart/form-data">
+			<form action="verify_captcha.php" action="index.php" method="POST" name="requestname"  enctype="multipart/form-data">
 				<ul>
 
 				<li class="widthInp">
@@ -256,11 +256,24 @@
 	</div>
 </footer>
 
+ <script>
+       
+        grecaptcha.ready(function () {
+            grecaptcha.execute('your_key', {action: 'action_name'})
+                .then(function (token) {
+                    // Verify the token on the server.
+                });
+        });
+
+</script>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 <script type="text/javascript" src="stellarnav.min.js"></script>
 <script type="text/javascript" src="materialize.min.js"></script>
+
+ <script src='https://www.google.com/recaptcha/api.js?render=6LcBYZ0UAAAAAErBQ7By3rXIm5n9vUNeSvphsIpu'></script>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 
